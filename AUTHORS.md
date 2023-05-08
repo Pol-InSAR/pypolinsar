@@ -2,7 +2,7 @@
 
 ## Development Lead
 
-* Pol-InSAR <Pol-InSAR@imansour.net>
+-   Pol-InSAR <Pol-InSAR@imansour.net>
 
 ## Contributors
 

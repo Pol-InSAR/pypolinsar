@@ -1,6 +1,5 @@
 # pypolinsar
 
-
 <p align="center">
 <a href="https://pypi.python.org/pypi/pypolinsar">
     <img src="https://img.shields.io/pypi/v/pypolinsar.svg"
@@ -21,18 +20,11 @@
 
 </p>
 
-
 PyPolInSAR is a Python package designed for PolInSAR (Polarimetric Interferometric Synthetic Aperture Radar) data processing and analysis. It provides a comprehensive set of tools for various PolInSAR applications, such as data visualization, speckle filtering, decomposition, classification, and inversion. With PyPolInSAR, users can easily load, manipulate, and analyze PolInSAR data in Python, making it a valuable tool for researchers and professionals in the field of radar remote sensing.
 
-
-* Free software: MIT
-* Documentation: <https://Pol-InSAR.github.io/pypolinsar/>
-
+-   Free software: MIT
+-   Documentation: <https://Pol-InSAR.github.io/pypolinsar/>
 
 ## Features
 
-* TODO
-
-## Credits
-
-This package was created with the [ppw](https://zillionare.github.io/python-project-wizard) tool. For more information, please visit the [project page](https://zillionare.github.io/python-project-wizard/).
+-   TODO
