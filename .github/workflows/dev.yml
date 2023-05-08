@@ -25,7 +25,7 @@ jobs:
                 # github action doesn't goes well with windows due to docker support
                 # github action doesn't goes well with macos due to `no docker command`
                 #os: [ubuntu-20.04, windows-latest, macos-latest]
-                os: [ubuntu-20.04]
+                os: [ubuntu-22.04]
         runs-on: ${{ matrix.os }}
         # map step outputs to job outputs so they can be share among jobs
         outputs:
@@ -63,10 +63,10 @@ jobs:
             - name: Declare variables for convenient use
               id: variables_step
               run: |
-                  echo "::set-output name=repo_owner::${GITHUB_REPOSITORY%/*}"
-                  echo "::set-output name=repo_name::${GITHUB_REPOSITORY#*/}"
-                  echo "::set-output name=package_name::`poetry version | awk '{print $1}'`"
-                  echo "::set-output name=package_version::`poetry version --short`"
+                  echo "name=${GITHUB_REPOSITORY%/*}" >> $GITHUB_OUTPUT
+                  echo "name=${GITHUB_REPOSITORY#*/}" >> $GITHUB_OUTPUT
+                  echo "name=`poetry version | awk '{print $1}'`" >> $GITHUB_OUTPUT
+                  echo "name=`poetry version --short`" >> $GITHUB_OUTPUT
               shell: bash
 
             - name: test with tox
@@ -112,8 +112,8 @@ jobs:
               with:
                   user: __token__
                   password: ${{ secrets.TEST_PYPI_API_TOKEN}}
-                  repository_url: https://test.pypi.org/legacy/
-                  skip_existing: true
+                  repository-url: https://test.pypi.org/legacy/
+                  skip-existing: true
 
     notification:
         needs: [test, publish_dev_build]

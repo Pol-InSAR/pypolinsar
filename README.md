@@ -1,22 +1,13 @@
 # pypolinsar
 
 <p align="center">
-<a href="https://pypi.python.org/pypi/pypolinsar">
-    <img src="https://img.shields.io/pypi/v/pypolinsar.svg"
-        alt = "Release Status">
-</a>
 
-<a href="https://github.com/Pol-InSAR/pypolinsar/actions">
-    <img src="https://github.com/Pol-InSAR/pypolinsar/actions/workflows/main.yml/badge.svg?branch=release" alt="CI Status">
-</a>
-
-<a href="https://Pol-InSAR.github.io/pypolinsar/">
-    <img src="https://img.shields.io/website/https/Pol-InSAR.github.io/pypolinsar/index.html.svg?label=docs&down_message=unavailable&up_message=available" alt="Documentation Status">
-</a>
-
-<a href="https://pyup.io/repos/github/Pol-InSAR/pypolinsar/">
-<img src="https://pyup.io/repos/github/Pol-InSAR/pypolinsar/shield.svg" alt="Updates">
-</a>
+[![Version](http://img.shields.io/pypi/v/pypolinsar?color=brightgreen)](https://pypi.python.org/pypi/pypolinsar)
+[![CI Status](https://github.com/Pol-InSAR/pypolinsar/actions/workflows/release.yml/badge.svg)](https://github.com/Pol-InSAR/pypolinsar)
+[![Dowloads](https://img.shields.io/pypi/dm/pypolinsar)](https://pypi.org/project/pypolinsar/)
+[![License](https://img.shields.io/pypi/l/pypolinsar)](https://opensource.org/licenses/BSD-2-Clause)
+![Python Versions](https://img.shields.io/pypi/pyversions/pypolinsar)
+[![Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 </p>
 
