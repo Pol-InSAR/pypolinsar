@@ -63,10 +63,12 @@ jobs:
             - name: Declare variables for convenient use
               id: variables_step
               run: |
+                  echo 'var<<EOF' >> $GITHUB_OUTPUT
                   echo REPO_OWNER="${GITHUB_REPOSITORY%/*}" >> $GITHUB_OUTPUT
                   echo REPO_NAME="${GITHUB_REPOSITORY#*/}" >> $GITHUB_OUTPUT
                   echo "`poetry version | awk '{print $1}'`" >> $GITHUB_OUTPUT
                   echo "`poetry version --short`" >> $GITHUB_OUTPUT
+                  echo 'EOF' >> $GITHUB_OUTPUT
               shell: bash
 
             - name: test with tox
