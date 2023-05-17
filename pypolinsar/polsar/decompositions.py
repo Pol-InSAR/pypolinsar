@@ -26,7 +26,7 @@ def h_a_alpha_decomposition(coherency_matrix):
     entropy = -np.sum(pseudo_probs * log_pseudo_probs, axis=-1) / np.log(3) # log base 3
     # anisotropy
     t_eigval_2 = t_eigval[..., 1] # second (intermediate) eigenvalue has index 1
-    t_eigval_3 = t_eigval[..., 0] # lthird (smallest) has index 0 (ascending sorting)
+    t_eigval_3 = t_eigval[..., 0] # third (smallest) has index 0 (ascending sorting)
     t_eigval_sum = t_eigval_2 + t_eigval_3
     anisotropy = np.divide(t_eigval_2 - t_eigval_3, t_eigval_sum, out=np.zeros_like(t_eigval_sum), where=t_eigval_sum!=0)
     return entropy, anisotropy, alpha_mean, alpha_dominant
