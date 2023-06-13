@@ -18,7 +18,7 @@ def h_a_alpha_decomposition(coherency_matrix):
     t_eigval, t_eigvec = np.linalg.eigh(coherency_matrix)
     pseudo_probs = t_eigval / np.sum(t_eigval, axis=-1, keepdims=True)
     # alpha angles
-    alpha_i = np.arccos(np.abs(t_eigvec[..., 0])) # arccos of abs of first element of each eigenvector
+    alpha_i = np.arccos(np.abs(t_eigvec[..., 0, :])) # arccos of abs of first element of each eigenvector
     alpha_mean = np.sum(pseudo_probs * alpha_i, axis=-1) # average alpha angle (weighted by eigenvalues)
     alpha_dominant = alpha_i[..., 2] # alpha angle corresponding to the largest eigenvalue (at index 2)
     # entropy
