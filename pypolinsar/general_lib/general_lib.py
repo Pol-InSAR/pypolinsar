@@ -7,6 +7,7 @@ def smooth_fast(im,size_filter):
     """this function makes a smooth interapolation of image
       it handles nan values as easy as with idl smooth (array,/nan)
 
+
     Parameters
     ----------
 
